@@ -319,7 +319,7 @@ function App() {
     <div className='bg-[#222222] rounded-xl text-center p-8'>
       <p className='text-[#FFC726] text-center text-3xl font-medium'>Application sent</p>
       <p className='text-center text-white mt-4'>Within 5 minutes you will be contacted by the manager on the specified contact. If the manager has not contacted you, then write us the number of your application in telegram.</p>
-    <div className='flex justify-between mt-6 items-center'>
+    <div className='flex md:justify-between md:flex-row sm:flex-col mt-6 items-center'>
       <div className='bg-[#383838] p-3 rounded-lg'><p className='text-[#FFC726] text-xl font-medium'>{applicationNumber_}</p><p className='text-white'>Application number</p><p className='text-[#FFC726] cursor-pointer' onClick={updateData}>cancel application</p></div>
       <div><p className='text-white border-2 border-solid rounded-lg p-2 border-[#FFC726]'>write to telegram</p></div>
     </div>
