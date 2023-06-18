@@ -165,7 +165,7 @@ function App() {
   return (
     <div className='bg-black'>
       
-      <div className="grid md:grid-cols-6 h-screen gap-4 text-white p-4">
+      <div className="grid md:grid-cols-6 gap-4 text-white p-4 overflow-x-hidden">
       <div className="md:col-start-1 md:col-end-2"><img className='w-[150px]' src={logo}/></div>
       <div className="md:col-start-2 md:col-end-5 bg-[#FFC726] py-4 rounded">
         <Marquee>
