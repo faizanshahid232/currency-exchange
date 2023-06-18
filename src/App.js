@@ -191,7 +191,7 @@ function App() {
 <div className='flex flex-col items-center justify-center'>
 <form className="w-full md:border-8 md:border-[#FFC726] md:rounded-2xl md:p-10 pb-3" onSubmit={handleSubmit}>
   <div className="flex flex-wrap justify-between -mx-3 mb-6">
-    <div className="md:w-1/3 px-3 mb-6 md:mb-0 flex">
+    <div className="md:w-1/3 px-3 md:mb-6 md:mb-0 flex">
     <div>
       <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2">
         sending
