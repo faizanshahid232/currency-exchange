@@ -182,12 +182,9 @@ function App() {
       </div>
       <div className="md:col-start-5 md:col-end-7 text-[13px] text-white font-medium"><div className='text-[20px] text-[#FFC726] font-medium'>exchange@rub-aed.ru</div>We work daily from <span className='text-[#FFC726]'>9:00 to 21:00 Moscow time</span></div>
       </div>
-    <h1 className="text-3xl font-bold underline text-center">
-      Hello world!
-    </h1>
     <div className="grid grid-cols-6 gap-4">
     <div className="col-start-2 col-span-4 pb-8">
-    <div className='md:text-7xl text-5xl font-semibold text-white mb-10 text-center'>Currency exchange in Dubai with delivery</div>
+    <div className='md:text-7xl text-5xl font-semibold text-white md:mb-10 mb-5 text-center'>Currency exchange in Dubai with delivery</div>
 <div className='flex flex-col items-center justify-center'>
 <form className="w-full md:border-8 md:border-[#FFC726] md:rounded-2xl md:p-10 pb-3" onSubmit={handleSubmit}>
   <div className="flex flex-wrap justify-between -mx-3 mb-6">
