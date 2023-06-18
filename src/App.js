@@ -2,13 +2,8 @@ import React, {useState, useEffect} from 'react';
 import { doc, getDoc, collection, addDoc, updateDoc } from "firebase/firestore";
 import {db} from './firebase/firebase';
 import logo from './logo.jpg';
-import logo_1 from './logo_1.svg';
-import logo_2 from './logo_2.svg';
-import logo_3 from './logo_3.svg';
-import logo_4 from './logo_4.svg';
-import logo_5 from './logo_5.svg';
-import logo_6 from './logo_6.svg';
 import delivery from './delivery.png';
+import transfer from './transfer.png';
 import cash from './cash.png';
 import agreement from './agreement.png';
 import Marquee from "react-fast-marquee";
@@ -192,11 +187,11 @@ function App() {
     </h1>
     <div className="grid grid-cols-6 gap-4">
     <div className="col-start-2 col-span-4 pb-8">
+    <div className='text-7xl font-semibold text-white mb-10 text-center'>Currency exchange in Dubai with delivery</div>
 <div className='flex flex-col items-center justify-center'>
-<form className="w-full max-w-lg" onSubmit={handleSubmit}>
-  <div className="flex flex-wrap -mx-3 mb-6">
-  <div className='text-5xl font-semibold text-white mb-10 text-center'>Currency exchange in Dubai with delivery</div>
-    <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0 flex">
+<form className="w-full md:border-8 md:border-[#FFC726] md:rounded-2xl md:p-10 pb-3" onSubmit={handleSubmit}>
+  <div className="flex flex-wrap justify-between -mx-3 mb-6">
+    <div className="md:w-1/3 px-3 mb-6 md:mb-0 flex">
     <div>
       <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2">
         sending
@@ -225,7 +220,10 @@ function App() {
       <p className="text-red-500 text-xs italic invisible">Please fill out this field.</p>
       </div>
     </div>
-    <div className="w-full md:w-1/2 px-3">
+    <div className='mb-[20px] w-full md:w-1/3 md:mt-[20px]'>
+      <center><img src={transfer} className='w-[40px]' /></center>
+    </div>
+    <div className="md:w-1/3 px-3">
       <div className='flex'>
         <div>
         <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2">
@@ -399,18 +397,6 @@ function App() {
             <div className='ml-5 text-[16px] font-medium'>Cashback from each transaction</div>
           </div>
         </div>
-      </div>
-    </div>
-    <div className="col-start-2 col-span-4 flex flex-col items-center justify-center text-center text-4xl font-semibold py-8 mb-4 text-white">Our partners
-      <div className='grid md:grid-cols-3 mt-6'>
-        <div className='m-2 w-[154px] h-[45px] rounded-[10px] bg-[#FFC726] flex items-center justify-center'><img src={logo_1} /></div>
-        <div className='m-2 w-[154px] h-[45px] rounded-[10px] bg-[#FFC726] flex items-center justify-center'><img src={logo_2} /></div>
-        <div className='m-2 w-[154px] h-[45px] rounded-[10px] bg-[#FFC726] flex items-center justify-center'><img src={logo_3} /></div>
-      </div>
-      <div className='grid md:grid-cols-3 md:mt-4'>
-        <div className='m-2 w-[154px] h-[45px] rounded-[10px] bg-[#FFC726] flex items-center justify-center'><img src={logo_4} /></div>
-        <div className='m-2 w-[154px] h-[45px] rounded-[10px] bg-[#FFC726] flex items-center justify-center'><img src={logo_5} /></div>
-        <div className='m-2 w-[154px] h-[45px] rounded-[10px] bg-[#FFC726] flex items-center justify-center'><img src={logo_6} /></div>
       </div>
     </div>
   </div>
